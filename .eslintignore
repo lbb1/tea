@@ -1,0 +1,7 @@
+#除了 .eslintignore 文件中的任何模式外，ESLint 总是遵循一些隐含的忽略规则，即使通过了 --no-ignore 标志。这些隐含的规则如下：
+#忽略 node_modules/
+#忽略点文件（除了 .eslintrc.*），以及点文件夹和它们的内容
+#src/index.js
+src/static/*
+public
+dist
