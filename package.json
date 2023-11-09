@@ -1,0 +1,50 @@
+{
+  "name": "tea",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "######": "比起直接用 start: node src/index.js  在命令中添加 --es-module-specifier-resolution=node 就可以解决显示文件名的问题（不加文件后缀.js）",
+    "start2": "node --es-module-specifier-resolution=node src/index.mjs",
+    "start3": "babel-node src/index.js",
+    "start": "nodemon -x babel-node src/index.js",
+    "lint": "npx eslint src --ext .js,.vue"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "nodemonConfig": {
+    "env": {
+      "NODE_ENV": "dev"
+    },
+    "execMap": {
+      "js": "node --harmony"
+    },
+    "ext": "js json",
+    "ignore": [
+      "dist/"
+    ],
+    "watch": [
+      "src/"
+    ]
+  },
+  "engines": {
+    "node": ">=13.2.0",
+    "npm": ">=6.13.1"
+  },
+  "author": "liubo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/eslint-parser": "^7.22.15",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.2",
+    "eslint": "^8.53.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "nodemon": "^3.0.1"
+  }
+}
