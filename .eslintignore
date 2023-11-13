@@ -2,6 +2,7 @@
 #忽略 node_modules/
 #忽略点文件（除了 .eslintrc.*），以及点文件夹和它们的内容
 #src/index.js
+node_modules/
 src/static/*
 public
 dist
