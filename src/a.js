@@ -1,9 +1,8 @@
 const a = 1;
 const b = () => {
-    return a
-}
-
+  return a;
+};
 export default {
-    a,
-    b
-}
+  a,
+  b,
+};

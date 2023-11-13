@@ -1,2 +1,2 @@
-import ab from './src/a.js'
-console.log(ab.b()) // 1
+import ab from './a.js';
+console.log(ab.b()); // 1
